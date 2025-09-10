@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "HackerRank Code Formatter",
+  "version": "1.0.0",
+  "description": "Adds a Format button to HackerRank's editor. Uses Monaco's formatter when available, otherwise a basic fallback.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [],
+  "host_permissions": [
+    "*://www.hackerrank.com/*",
+    "*://hackerrank.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.hackerrank.com/*",
+        "*://hackerrank.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "inject.js"
+      ],
+      "matches": [
+        "*://www.hackerrank.com/*",
+        "*://hackerrank.com/*"
+      ]
+    }
+  ]
+}
