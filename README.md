@@ -11,9 +11,7 @@ This extension adds a small "Format" button on HackerRank problem pages. When cl
 
 ## Features
 
-- ✅ **Java-specific formatting** with proper class member indentation
-- ✅ **4-space indentation** (industry standard for Java)
-- ✅ **Automatic indentation conversion** from 2-space to 4-space
+- ✅ **4-space indentation**
 - ✅ **Switch statement formatting** with proper case/break alignment
 - ✅ **Comprehensive debugging** with console logging
 - ✅ **Offline operation** - no external dependencies
